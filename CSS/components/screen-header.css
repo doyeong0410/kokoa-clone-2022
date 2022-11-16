@@ -15,43 +15,19 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
-.point {
-  background-color: tomato;
-  width: 8px;
-  height: 8px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 18px;
-  left: 70px;
+
+@keyframes rotatecog {
+  from {
+    transform: none;
   }
-  .point2 {
-    background-color: tomato;
-    width: 8px;
-    height: 8px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 16px;
-    left: 120px;
-    }
-  .info-mark {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    font-size: 13px;
-    font-weight: 900;
-    color: rgba(255, 99, 71, 0.836);
-    border: 2px solid rgba(255, 99, 71, 0.836);
-    bottom: 16px;
-    left: 115px;
+  to {
+    transform: rotateZ(360deg);
   }
+}
+
+.screen-header__icons .fa-cog:hover {
+animation: rotatecog 1s linear infinite;
+}
+
+
   
